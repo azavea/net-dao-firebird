@@ -44,6 +44,7 @@ namespace Azavea.Open.DAO.Firebird.Tests
             // Reset the unit test database by copying the template, since we don't know what any
             // other unit tests (or a previous run of this test) has done to the state of the db.
             File.Copy("..\\..\\Tests\\Template\\UnitTest.fdb", "..\\..\\Tests\\UnitTest.fdb", true);
+            ResetAllTables();
         }
         /// <exclude/>
         [Test]

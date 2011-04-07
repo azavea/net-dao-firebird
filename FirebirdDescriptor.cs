@@ -150,6 +150,12 @@ namespace Azavea.Open.DAO.Firebird
         }
 
         /// <exclude/>
+        public override IDaLayer CreateDataAccessLayer()
+        {
+            return new FirebirdDaLayer(this);
+        }
+
+        /// <exclude/>
         public override string ToCleanString()
         {
             return _cleanConnStr;
