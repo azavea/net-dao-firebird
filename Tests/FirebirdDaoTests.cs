@@ -35,7 +35,8 @@ namespace Azavea.Open.DAO.Firebird.Tests
     {
         /// <exclude/>
         public FirebirdDaoTests()
-            : base(new Config("..\\..\\Tests\\FirebirdDao.config", "FirebirdDaoConfig"), "DAO", false) { }
+            : base(new Config("..\\..\\Tests\\FirebirdDao.config", "FirebirdDaoConfig"), "DAO", false,
+                true, true, true, true, true, true) { }
 
         /// <exclude/>
         [TestFixtureSetUp]
